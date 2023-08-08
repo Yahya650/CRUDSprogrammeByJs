@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="CRUDSpage.css" />
+  </head>
+  <body class="container">
+    <div class="mt-3 text text-center mb-4">
+      <h1>CRUDS PROJECT</h1>
+      <h3>CREATE READ UPDATE DELETE SEARCH</h3>
+    </div>
+    <div class="row d-flex justify-content-center" id="msgError"></div>
+    <div class="row gap-1">
+      <input class="py-2 col-12" type="text" placeholder="Title" id="Title" />
+      <input
+        class="col-2"
+        value=""
+        type="number"
+        placeholder="Price"
+        name=""
+        id="Price"
+      />
+      <input
+        class="col-2"
+        value=""
+        type="number"
+        placeholder="Taxes"
+        name=""
+        id="Taxes"
+      />
+      <input
+        class="col-2"
+        value=""
+        type="number"
+        placeholder="ads"
+        name=""
+        id="ads"
+      />
+      <input
+        class="col-2"
+        value=""
+        type="number"
+        placeholder="discount"
+        name=""
+        id="discount"
+      />
+      <div
+        id="divTotal"
+        style="display: flex"
+        class="fit-content text-center m-2 col-2 bg-danger rounded-pill bg-opacity-50"
+      >
+        <label for="Total">Total:</label>
+        <input id="Total" class="bg-transparent" disabled value="0" />
+      </div>
+      <input
+        class="py-2 col-12"
+        type="number"
+        value=""
+        placeholder="Count"
+        id="Count"
+      />
+      <input
+        class="py-2 col-12"
+        type="text"
+        placeholder="Category"
+        id="Category"
+      />
+      <input
+        class="py-2 col-12"
+        type="button"
+        onclick="Func_Creat()"
+        value="Create"
+        id="btn_creat"
+      />
+      <input
+        class="py-2 col-12 d-none"
+        type="button"
+        value="Update"
+        id="btn_update"
+      />
+      <input class="py-2 col-12" type="text" placeholder="Search" id="Search" />
+      <div class="row p-0 m-0">
+        <input
+          class="py-2 col-5"
+          type="button"
+          value="Search By Title"
+          id="searchBy_title"
+        />
+        <input
+          class="mx-0 p-0 col-2"
+          type="button"
+          value="Search By Total"
+          id="searchBy_total"
+        />
+        <input
+          class="py-2 col-5"
+          type="button"
+          value="Search By Category"
+          id="searchBy_category"
+        />
+      </div>
+      <button id="deleteAll" class="py-2 col-12">
+        Delete All (<span id="number_product">0</span>)
+      </button>
+      <table class="table text-center col-12 mt-3">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>TITLE</th>
+            <th>PRICE</th>
+            <th>TAXES</th>
+            <th>ADS</th>
+            <th>DISCOUNT</th>
+            <th>TOTAL</th>
+            <th>CATEGORY</th>
+            <th>UPDATE</th>
+            <th>DELETE</th>
+          </tr>
+        </thead>
+        <tbody id="Table_body"></tbody>
+      </table>
+    </div>
+    <script src="CRUDSpage.js"></script>
+    <script src="bootstrap.min.js"></script>
+  </body>
+</html>

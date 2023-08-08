@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: white;
+}
+#updateItem,
+#deleteItem {
+  background-color: #2a0668;
+  border: none;
+}
+#Total::placeholder {
+  color: white;
+}
+#btn_creat {
+  background-color: #2a0668;
+}
+input[type="button"] {
+  background-color: #2a0668;
+}
+#deleteAll {
+  background-color: #2a0668;
+  border-radius: 15px;
+  border: none;
+}
+.clos {
+  background-color: #2a066885;
+}
+#deleteAll:hover,
+#searchBy_title:hover,
+#btn_creat:hover,
+#searchBy_category:hover,
+#searchBy_total:hover {
+  transition: 0.2s;
+  background-color: #240062;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #212120;
+}
+input {
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  background-color: #111110;
+}
+input::placeholder {
+  color: #393939;
+}
+
+.btnsSearch,
+.btndl {
+  background-color: #2a0668;
+}
+.btnsSearch:hover,
+.btndl:hover {
+  transition: 0.2s;
+  background-color: #240062;
+}
